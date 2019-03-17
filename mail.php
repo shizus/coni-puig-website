@@ -1,5 +1,5 @@
 <?php
-    $to = 'demo@spondonit.com';
+    $to = 'hola@conipuig.com';
     $name = $_POST["name"];
     $email= $_POST["email"];
     $text= $_POST["message"];
@@ -23,9 +23,9 @@
 
     if (@mail($to, $email, $message, $headers))
     {
-        echo 'The message has been sent.';
+        echo 'Tu mensaje fue enviado.';
     }else{
-        echo 'failed';
+        echo 'Hubo un error en el servidor por favor comunicate por otra vía.';
     }
 
 ?>
