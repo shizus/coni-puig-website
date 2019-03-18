@@ -9,7 +9,7 @@ $(document).ready(function(){
 	fitscreen 			 = window_height - header_height;
 
 
-	$(".fullscreen").css("height", window_height)
+	$(".fullscreen").css("height", window_height - 150)
 	$(".fitscreen").css("height", fitscreen);
 
      if(document.getElementById("default-select")){
@@ -359,6 +359,10 @@ $(document).ready(function(){
             $('#mc_embed_signup').find('form').ajaxChimp();
         });      
 
+
+        $('.single-feature').click(function() {
+            window.location = './#contact';
+        });
 
 
 
