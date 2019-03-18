@@ -15,7 +15,7 @@
           <h4>Asesoramiento de imagen integral</h4>
           <p>
             Realizamos un test de estilo, vemos el tipo de cuerpo y tipo de rostro, hacemos un test
-            de colorimetria y la organización del guardaropas. Todo esto nos da las bases con lo
+            de colorimetria y la organización del guardarropas. Todo esto nos da las bases con lo
             que vamos a trabajar. Armamos conjuntos y te doy todas las herramientas que necesitás
             para lucirte!
           </p>
