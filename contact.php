@@ -5,7 +5,7 @@
 
         <div class="col-lg-4 col-md-6 booking-right">
             <h4 class="mb-20">Contactame!</h4>
-            <form action="contact.php" method="post">
+            <form action="mail.php" method="post">
                 <input class="form-control" type="text" name="name" placeholder="Nombre" required>
                 <input class="form-control" type="email" name="email" placeholder="Email" required>
                 <input class="form-control" type="text" name="phone" placeholder="Teléfono">
