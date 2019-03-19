@@ -24,9 +24,9 @@
     </table>';
     if (mail($to, 'Pedido online de: '.$service, $message, $headers))
     {
-        exit(200,'Tu mensaje fue enviado.');
+        exit('Tu mensaje fue enviado.');
     }else{
-        exit(502,'Hubo un error en el servidor por favor comunicate por otra vía.');
+        die('Hubo un error en el servidor por favor comunicate por otra vía.');
     }
 
 ?>
