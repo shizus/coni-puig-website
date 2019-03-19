@@ -5,21 +5,22 @@
 
         <div class="col-lg-4 col-md-6 booking-right">
             <h4 class="mb-20">Contactame!</h4>
-            <form action="mail.php" method="post">
+            <form id="contactForm" method="post">
                 <input class="form-control" type="text" name="name" placeholder="Nombre" required>
                 <input class="form-control" type="email" name="email" placeholder="Email" required>
                 <input class="form-control" type="text" name="phone" placeholder="Teléfono">
                 <div class="default-select" id="default-select"">
-                <select>
+                <select name="service">
                     <option value="" disabled selected hidden>Servicio</option>
-                    <option value="1">Aún no lo decidí</option>
-                    <option value="1">Asesoramiento integral</option>
-                    <option value="1">Personal shopper</option>
-                    <option value="1">Organización y maximización de guardarropas</option>
-                    <option value="1">Asesoría para eventos</option>
+                    <option value="Servicio sin definir">Aún no lo decidí</option>
+                    <option value="Asesoramiento Integral">Asesoramiento integral</option>
+                    <option value="Personal Shopper">Personal shopper</option>
+                    <option value="Organización de guardarropas">Organización y maximización de guardarropas</option>
+                    <option value="Asesoría para eventos">Asesoría para eventos</option>
                 </select>
         </div>
         <textarea class="common-textarea form-control mt-10" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mensaje'"></textarea>
+        <div class="mt-20 alert-msg" style="text-align: left;"></div>
         <button  class="btn btn-default btn-lg btn-block text-center">Enviar</button>
         </form>
     </div>

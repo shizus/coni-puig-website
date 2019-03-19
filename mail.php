@@ -1,9 +1,11 @@
 <?php
-    $to = 'hola@conipuig.com';
+
+    $to = 'hola@conipuig.com.ar';
     $name = $_POST["name"];
     $email= $_POST["email"];
     $text= $_POST["message"];
-    $sub= $_POST["sub"];
+    $phone = $_POST["phone"];
+    $service = $_POST["service"];
     
 
 
@@ -16,16 +18,15 @@
             <td>'.$name.'</td>
         </tr>
         <tr><td>Email: '.$email.'</td></tr>
-        <tr><td>phone: '.$sub.'</td></tr>
+        <tr><td>Phone: '.$phone.'</td></tr>
         <tr><td>Text: '.$text.'</td></tr>
         
     </table>';
-
-    if (@mail($to, $email, $message, $headers))
+    if (mail($to, 'Pedido online de: '.$service, $message, $headers))
     {
-        echo 'Tu mensaje fue enviado.';
+        exit(200,'Tu mensaje fue enviado.');
     }else{
-        echo 'Hubo un error en el servidor por favor comunicate por otra vía.';
+        exit(502,'Hubo un error en el servidor por favor comunicate por otra vía.');
     }
 
 ?>
