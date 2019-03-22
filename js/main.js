@@ -371,8 +371,8 @@ $(document).ready(function(){
            console.log(event);
             gtag('event', 'click', {
                 'event_category': event.target.localName,
-                'event_label': event.baseURI,
-                'value': event.target.className
+                'event_label': event.target.className,
+                'value': event.target.which
             });
         });
 

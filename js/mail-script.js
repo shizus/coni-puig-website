@@ -12,7 +12,7 @@
             gtag('event', 'contact', {
                 'event_category': event.target.localName,
                 'event_label': event.baseURI,
-                'value': 'sending'
+                'value': 0
             });
             e.preventDefault(); // prevent default form submit
 
@@ -33,7 +33,7 @@
                     gtag('event', 'contact', {
                         'event_category': event.target.localName,
                         'event_label': event.baseURI,
-                        'value': 'success'
+                        'value': 1
                     });
                 },
                 error: function(e) {
@@ -42,7 +42,7 @@
                     gtag('event', 'contact', {
                         'event_category': event.target.localName,
                         'event_label': event.baseURI,
-                        'value': 'fail'
+                        'value': -1
                     });
                 }
             });
