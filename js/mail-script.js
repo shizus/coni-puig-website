@@ -14,6 +14,10 @@
                 'event_label': event.baseURI,
                 'value': 0
             });
+            gtag('event', 'conversion', {
+                'send_to': 'AW-983734430/Arz4CLWGopcBEJ6xitUD'
+            });
+
             e.preventDefault(); // prevent default form submit
 
             $.ajax({
