@@ -367,7 +367,14 @@ $(document).ready(function(){
 
 
 
-
+        $(document).click(function (event) {
+           console.log(event);
+            gtag('event', 'click', {
+                'event_category': event.target.localName,
+                'event_label': event.baseURI,
+                'value': event.target.className
+            });
+        });
 
 
  });
