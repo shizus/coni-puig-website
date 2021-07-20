@@ -35,8 +35,8 @@
                     form.trigger('reset'); // reset form
                     submit.attr("style", "display: none !important"); // reset submit button text
                     gtag('event', 'contact', {
-                        'event_category': event.target.localName,
-                        'event_label': event.baseURI,
+                        'event_category': 'mail-contact',
+                        'event_label': 'success',
                         'value': 1
                     });
                 },
@@ -44,8 +44,8 @@
                     alert.addClass('alert-danger');
                     alert.html('Hubo un error en el servidor, por favor comunicate por otra vía.').fadeIn(); // fade in response data
                     gtag('event', 'contact', {
-                        'event_category': event.target.localName,
-                        'event_label': event.baseURI,
+                        'event_category': 'mail-contact',
+                        'event_label': 'success',
                         'value': -1
                     });
                 }
