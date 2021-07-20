@@ -372,7 +372,7 @@ $(document).ready(function(){
             gtag('event', 'click', {
                 'event_category': event.target.localName,
                 'event_label': event.target.className,
-                'value': event.target.which
+                'value': event.target.id
             });
         });
 

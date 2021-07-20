@@ -21,7 +21,7 @@
         </div>
         <textarea class="common-textarea form-control mt-10" name="message" placeholder="Mensaje" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mensaje'"></textarea>
         <div class="mt-20 alert alert-msg" style="text-align: left;"></div>
-        <button  class="btn btn-default btn-lg btn-block text-center">Enviar</button>
+        <button id="contact-button" class="btn btn-default btn-lg btn-block text-center">Enviar</button>
         </form>
     </div>
       
